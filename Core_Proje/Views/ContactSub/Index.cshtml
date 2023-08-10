@@ -1,0 +1,33 @@
+﻿@model EntityLayer.Concrete.Contact
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_YeniAdminLayout.cshtml";
+}
+
+
+
+<form class="form-group" asp-action="Index" asp-controller="ContactSub" method="post">
+
+    <input asp-for="ContactID" type="hidden" />
+
+    <label asp-for="Title">Başlık:</label> <br />
+
+    <input asp-for="Title" class="form-control" /> <br />
+
+    <label asp-for="Mail">Mail:</label> <br />
+
+    <input asp-for="Mail" class="form-control" /> <br />
+
+    <label asp-for="Phone">Telefon:</label> <br />
+
+    <input asp-for="Phone" class="form-control" /> <br />
+
+    <label asp-for="Description">Açıklama:</label> <br />
+
+    <input asp-for="Description" class="form-control" /> <br />
+
+    <button type="submit" class="btn btn-success">Güncelle</button>
+
+</form>
+

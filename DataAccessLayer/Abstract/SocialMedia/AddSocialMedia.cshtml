@@ -1,0 +1,32 @@
+﻿@model EntityLayer.Concrete.SocialMedia
+@{
+    ViewData["Title"] = "AddSocialMedia";
+    Layout = "~/Views/Shared/_YeniAdminLayout.cshtml";
+}
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Yeni Sosyal Medya Kanalı Ekleme</h3>
+</div>
+<br />
+
+<form class="form-group" asp-action="AddSocialMedia" asp-controller="SocialMedia" method="post">
+
+
+
+    <label asp-for="Name">Başlık:</label> <br />
+
+    <input asp-for="Name" class="form-control" /> <br />
+
+    <label asp-for="Url">URl:</label> <br />
+
+    <input asp-for="Url" class="form-control" /> <br /><br
+
+    <label asp-for="Icon">Icon:</label> <br />
+
+    <input asp-for="Icon" class="form-control" /> <br /><br />
+
+    <button type="submit" class="btn btn-info">Kaydet</button>
+
+</form>
+

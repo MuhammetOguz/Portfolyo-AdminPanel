@@ -1,0 +1,46 @@
+﻿@model EntityLayer.Concrete.About
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_YeniAdminLayout.cshtml";
+}
+
+
+
+
+<form class="form-group" asp-action="Index" asp-controller="About" method="post">
+
+    <input asp-for="AboutID" type="hidden" />
+
+    <label asp-for="Title">Başlık:</label> <br />
+
+    <input asp-for="Title" class="form-control" /> <br />
+
+    <label asp-for="Age">Yaş:</label> <br />
+
+    <input asp-for="Age" class="form-control" /> <br />
+
+    <label asp-for="Mail">Mail:</label> <br />
+
+    <input asp-for="Mail" class="form-control" /> <br />
+
+    <label asp-for="Phone">Telefon:</label> <br />
+
+    <input asp-for="Phone" class="form-control" /> <br />
+
+    <label asp-for="Adress">Adres:</label> <br />
+
+    <input asp-for="Adress" class="form-control" /> <br />
+
+    <label asp-for="ImageUrl">Resim:</label> <br />
+
+    <input asp-for="ImageUrl" class="form-control" /> <br />
+
+    <label asp-for="Description">Açıklama:</label> <br />
+
+    <input asp-for="Description" class="form-control" /> <br />
+
+    <button type="submit" class="btn btn-success">Güncelle</button>
+
+</form>
+

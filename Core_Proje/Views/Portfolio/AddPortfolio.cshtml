@@ -1,0 +1,44 @@
+﻿@model EntityLayer.Concrete.Portfolio
+@{
+    ViewData["Title"] = "AddPortfolio";
+    Layout = "~/Views/Shared/_YeniAdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0"> Proje Ekleme Sayfası</h3>
+</div>
+<br />
+
+<form class="form-group" asp-action="AddPortfolio" asp-controller="Portfolio" method="post">
+
+
+
+    <label asp-for="Name">Proje Başlığı:</label> <br />
+
+    <input asp-for="Name" class="form-control" /> <br />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <label asp-for="ImageUrl">Görsel 1:</label> <br />
+
+    <input asp-for="ImageUrl" class="form-control" /> <br /><br
+    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+
+    <label asp-for="ImageUrl2">Görsel 2:</label> <br />
+
+    <input asp-for="ImageUrl2" class="form-control" /> <br /><br />
+    <span asp-validation-for="ImageUrl2" class="text-danger"></span>
+
+
+    <label asp-for="ProjectUrl">Proje URL:</label> <br />
+
+    <input asp-for="ProjectUrl" class="form-control" /> <br /><br />
+    <span asp-validation-for="ProjectUrl" class="text-danger"></span>
+
+
+
+   
+    <button type="submit" class="btn btn-info">Kaydet</button>
+    <a href="/Portfolio/Index/" class="btn btn-primary">Proje Sayfasına Dön</a>
+
+</form>
+

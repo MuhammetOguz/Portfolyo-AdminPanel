@@ -1,0 +1,35 @@
+﻿@model EntityLayer.Concrete.Message
+@{
+    ViewData["Title"] = "ContactDetails";
+    Layout = "~/Views/Shared/_YeniAdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0"> Mesaj Detayları</h3>
+</div>
+<br />
+
+<form> 
+
+    <input asp-for="MessageID" type="hidden" />
+
+    <label asp-for="Name"></label> <br />
+
+    <input asp-for="Name" class="form-control" /> <br />
+
+    <label asp-for="Mail"></label> <br />
+
+    <input asp-for="Mail" class="form-control" /> <br /><br
+
+    <label asp-for="Date"></label> <br />
+
+    <input asp-for="Date" class="form-control" /> <br /><br />
+
+    <label asp-for="Content"></label> <br />
+
+    <input asp-for="Content" class="form-control" /> <br /><br />
+
+    <a asp-action="Index" class="btn btn-primary mr-2">İletişim Sayfası</a>
+
+</form>
+

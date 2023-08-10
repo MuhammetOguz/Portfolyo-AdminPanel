@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.Feature
+@{
+    ViewData["Title"] = "EditSkill";
+    Layout = "~/Views/Shared/_YeniAdminLayout.cshtml";
+}
+
+
+<form class="form-group" asp-action="Index" asp-controller="Feature" method="post">
+
+    <input asp-for="FeatureID" type="hidden" />
+
+    <label asp-for="Header">Başlık:</label> <br />
+
+    <input asp-for="Header" class="form-control" /> <br />
+
+    <label asp-for="Name">Ad Soyad:</label> <br />
+
+    <input asp-for="Name" class="form-control" /> <br />
+
+    <label asp-for="Title">Ünvan:</label> <br />
+
+    <input asp-for="Title" class="form-control" /> <br />
+
+    <button type="submit" class="btn btn-success">Güncelle</button>
+
+</form>
